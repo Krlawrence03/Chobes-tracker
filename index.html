@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chobes Drought Tracker</title>
+  <meta name="description" content="A live count of how long it's been since Chobes last won a fantasy football game.">
+
+  <!-- Link previews (iMessage, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chobes Drought Tracker">
+  <meta property="og:description" content="Live count of how long it's been since Chobes won a fantasy football game. The clock is still running.">
+  <meta property="og:image" content="chobes.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chobes Drought Tracker">
+  <meta name="twitter:description" content="Live count of how long it's been since Chobes won a fantasy football game.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="overlay" aria-hidden="true"></div>
+
+  <main class="content">
+    <header class="top">
+      <p class="live"><span class="dot"></span> LIVE</p>
+      <h1 class="headline">Time since Chobes won a fantasy football game</h1>
+    </header>
+
+    <section class="bottom">
+      <div class="timer" role="timer" aria-live="off">
+        <div class="unit"><span class="num" id="weeks">0</span><span class="label">Weeks</span></div>
+        <div class="unit"><span class="num" id="days">0</span><span class="label">Days</span></div>
+        <div class="unit"><span class="num" id="hours">00</span><span class="label">Hours</span></div>
+        <div class="unit"><span class="num" id="minutes">00</span><span class="label">Minutes</span></div>
+        <div class="unit"><span class="num" id="seconds">00</span><span class="label">Seconds</span></div>
+      </div>
+
+      <p class="last-win">Last win: Monday, December 1, 2025</p>
+
+      <p class="roast" id="roast" aria-live="polite"></p>
+
+      <button class="reset" id="reset" type="button">Reset Counter</button>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="assertive">
+    Nice try, Chobes. You have to actually win first.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
