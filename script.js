@@ -38,7 +38,7 @@ const roasts = [
   "He's the reason the league has a last-place punishment.",
   "Opponents schedule him like a bye week.",
   "His lineup looks like it was set by Diggs.",
-  "ESPN's win probability chart just is negative",
+  "ESPN's win probability chart is negative",
   "He's one win away from ending this website. Take your time.",
 ];
 
